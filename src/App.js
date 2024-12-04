@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Todo from "./components/Todo";
+import img1 from "./images/f3.png";
+import img2 from "./images/f4.png";
+import img3 from "./images/f5.png";
+import styles from "./App.module.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <div className={styles.container}>
+        <h1 className="Title">Что вам необходимо?</h1>
+        <div></div>
+        <Todo title="Первый блок" img={img1} text="Lorem ipsum dolor sit amet consectetur adipisicing elit"/>
+        <Todo title="Второй блок" img={img2} text="Lorem ipsum dolor sit amet consectetur adipisicing elit"/>
+        <Todo title="Третий блок" img={img3} text="Lorem ipsum dolor sit amet consectetur adipisicing elit"/>
+        <div></div>
+      </div>
+
   );
 }
 

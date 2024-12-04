@@ -1,0 +1,21 @@
+.block{
+	display: inline-block;
+	width: 30%;
+	margin: 1%;
+    text-align: center;
+}
+.block img {
+	width: 70px;
+}
+.block h2 {
+	font-weight: 900;
+}
+.block p h2 {
+    margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+    line-height: 1.65em;
+}
+.block p {
+    color: rgb(129, 129, 129);
+}
+
